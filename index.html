@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineTake Productions</title>
+  <meta name="description" content="CineTake Productions — filmmaking, direction and cinematography.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="CineTake Productions home">
+        <img id="brand-logo" alt="" width="44" height="44">
+        <span id="brand-name" class="brand-name"></span>
+      </a>
+      <nav id="main-nav" class="nav" aria-label="Main"></nav>
+      <i data-lucide="video" class="header-cam" aria-hidden="true"></i>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-text">
+        <p id="hero-eyebrow" class="eyebrow"></p>
+        <h1 id="hero-title" class="display"></h1>
+        <p id="hero-roles" class="roles"></p>
+        <a id="hero-cta" class="btn" href="#work"><i data-lucide="play"></i><span></span></a>
+      </div>
+      <div class="hero-visual">
+        <div class="viewfinder">
+          <iframe id="hero-video" title="Showreel" allow="autoplay; encrypted-media" loading="lazy"></iframe>
+          <div class="vf-overlay" aria-hidden="true">
+            <span class="vf-rec"><i class="dot"></i>REC</span>
+            <span id="timecode" class="vf-time">00:02:34:18</span>
+            <span class="vf-fps">24 FPS<br>CAM A</span>
+            <i class="corner bl"></i><i class="corner br"></i><i class="corner tl"></i><i class="corner tr"></i>
+          </div>
+        </div>
+        <p id="hero-side" class="side-text"></p>
+      </div>
+    </section>
+
+    <section id="work" class="work container">
+      <div class="section-head">
+        <i data-lucide="film" class="section-icon"></i>
+        <h2 id="work-title" class="display"></h2>
+        <span class="rule"></span>
+        <button id="work-toggle" class="link-btn" hidden></button>
+      </div>
+      <div id="work-grid" class="work-grid"></div>
+    </section>
+
+    <section id="grading" class="grading container">
+      <div class="section-head">
+        <i data-lucide="palette" class="section-icon"></i>
+        <h2 id="grading-title" class="display"></h2>
+        <span class="rule"></span>
+      </div>
+      <div id="grading-grid" class="grade-grid"></div>
+      <div id="grading-videos" class="grade-videos"></div>
+    </section>
+
+    <section id="about" class="about container">
+      <div class="about-text">
+        <div class="section-head"><i data-lucide="user" class="section-icon"></i><h2 id="about-title" class="display"></h2></div>
+        <h3 id="about-headline" class="display sub"></h3>
+        <p id="about-text"></p>
+        <a id="about-link" class="link-btn" href="#"></a>
+      </div>
+      <figure class="about-art"><img id="about-img" alt="Illustration of a director beside a camera on a tripod"></figure>
+      <aside class="about-values">
+        <ul id="about-values"></ul>
+        <img id="about-hand" class="handwriting" alt="Same dreams. Bigger frames.">
+      </aside>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-grid">
+      <div class="cta">
+        <i data-lucide="mail" class="section-icon"></i>
+        <div>
+          <p id="contact-eyebrow" class="eyebrow"></p>
+          <h2 id="contact-headline" class="display"></h2>
+        </div>
+      </div>
+      <div class="contact-links">
+        <p id="contact-text"></p>
+        <div>
+          <a id="link-instagram" class="link-btn" target="_blank" rel="noopener"><i data-lucide="instagram"></i>Instagram <i data-lucide="arrow-right"></i></a>
+          <a id="link-email" class="link-btn"><i data-lucide="mail"></i>Email <i data-lucide="arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="fps-badge"><i data-lucide="video"></i><i data-lucide="audio-lines"></i><span>24 FPS</span></div>
+    </div>
+    <p class="container copyright" id="copyright"></p>
+  </footer>
+
+  <dialog id="video-modal" class="modal" aria-label="Video player">
+    <button class="modal-close" aria-label="Close video"><i data-lucide="x"></i></button>
+    <div class="modal-frame"><iframe id="modal-iframe" title="Video" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe></div>
+  </dialog>
+</body>
+</html>

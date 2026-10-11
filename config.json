@@ -1,0 +1,71 @@
+{
+  "site": {
+    "name": "CineTake Productions",
+    "email": "contact.cinetakemedia@gmail.com",
+    "instagram": "https://instagram.com/cinetake.films",
+    "logo": "assets/logo.png"
+  },
+  "nav": [
+    { "label": "Home", "target": "#home" },
+    { "label": "Work", "target": "#work" },
+    { "label": "Grading", "target": "#grading" },
+    { "label": "About", "target": "#about" },
+    { "label": "Contact", "target": "#contact" }
+  ],
+  "hero": {
+    "eyebrow": "Small team. Big visions.",
+    "title": "CineTake Productions",
+    "roles": ["Filmmaking", "Direction", "Cinematography", "Visual Storytelling"],
+    "buttonLabel": "Watch Showreel",
+    "videoId": "Y0vk0YtGtgQ",
+    "sideText": "Real stories. Better visuals."
+  },
+  "work": {
+    "title": "Selected Work",
+    "initialVisible": 4,
+    "items": [
+      { "title": "Ad Film for Duolingo", "subtitle": "Scene Recreation", "icon": "clapperboard", "youtubeId": "Y0vk0YtGtgQ", "tags": ["Direction","Writing", "Colorgrading", "Cinematography", "Editing", "VFX"] },
+      { "title": "Music Video - Mere Piya", "subtitle": "Concept to Screen", "icon": "music", "youtubeId": "PCagB86Hr6M", "tags": ["Direction", "Colorgrading", "Cinematography", "VFX", "Editing"] },
+      { "title": "Ad Film for Lensekart", "subtitle": "Commercial", "icon": "megaphone", "youtubeId": "FfR6rb5-e8s", "tags": ["Direction","Writing", "Colorgrading", "Cinematography", "Editing"] },
+      { "title": "Scence Recreation - Jamnapar", "subtitle": "Original Project", "icon": "film", "youtubeId": "WLWNCspL5iw", "tags": ["Colorgrading", "Cinematography", "Editing"] },
+      { "title": "Scence Recreation - Gully Boy", "subtitle": "Original Project", "icon": "film", "youtubeId": "Q22Hz4B90B8", "tags": ["Colorgrading", "Cinematography", "Editing"] }
+    ]
+  },
+  "grading": {
+    "title": "Color Grading",
+    "videos": [
+      {
+        "label": "Before",
+        "youtubeId": "Rpzv4uAH4v8"
+      },
+      {
+        "label": "After",
+        "youtubeId": "Nlz-NwCU5HE"
+      }
+    ],
+    "items": [
+      { "title": "Film Look1", "subtitle": "Warm cinematic grade", "icon": "palette", "before": "assets/grading/shot1-before.png", "after": "assets/grading/shot1-after.png", "tags": ["Color Grading", "DaVinci Resolve"] },
+      { "title": "Film Look2", "subtitle": "Commercial look", "icon": "palette", "before": "assets/grading/shot2-before.png", "after": "assets/grading/shot2-after.png", "tags": ["Color Grading", "DaVinci Resolve"] }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "headline": "We make things move.",
+    "text": "CineTake Productions is a creative studio built by filmmakers, for storytellers. We create visual content that feels real, raw and unforgettable from cinematic recreations to original films and ads.",
+    "linkLabel": "Learn more",
+    "linkTarget": "#contact",
+    "illustration": "assets/director.png",
+    "handwriting": "assets/handwriting.png",
+    "values": [
+      { "icon": "clapperboard", "text": "Storyteller at heart" },
+      { "icon": "camera", "text": "Always experimenting" },
+      { "icon": "monitor", "text": "Cinema is home" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Have a story?",
+    "headline": "Let's make it.",
+    "text": "Get in touch for collaborations, projects or just to say hi."
+  },
+  "footer": { "owner": "CineTake Productions" }
+}
