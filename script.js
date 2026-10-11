@@ -17,6 +17,7 @@ function renderHeader({ site, nav }) {
   const logo = $('#brand-logo'); logo.src = site.logo; logo.onerror = () => logo.removeAttribute('src');
   $('#brand-name').textContent = site.name;
   $('#main-nav').innerHTML = nav.map(n => `<a href="${n.target}">${n.label}</a>`).join('');
+  $('#link-to-mail').href = `mailto:${site.email}`;
 }
 
 function renderHero({ hero }) {
